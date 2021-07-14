@@ -1,0 +1,224 @@
+/* ---------------------------
+        common styles
+--------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-color:  #FFFFFF;
+}
+
+
+.container{
+    width: 75%;
+    margin: 70px auto;
+}
+
+
+.button a{
+    text-decoration: none;
+    font-size: 10pt;
+    font-weight: 700;
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: #E02C6D;
+    color: white;
+    transition: all .3s ease-in;
+}
+
+.button a:hover{
+    padding: 17px 27px;
+    background-color: rgb(231, 227, 227);
+    color: #E02C6D;
+    font-weight: 700;
+    box-shadow: 1px 1px 10px #E02C6D;
+}
+
+
+
+
+
+/* ---------------------------
+        banner section
+--------------------------- */
+
+.banner-section{
+    display: flex;
+    width: 100%;
+    height: 677px;
+    background-color: #2D25A0;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-banner{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.banner-text{
+    width:485px;
+    height: 230px;
+    margin-top: 100px;
+   
+}
+
+.banner-text h1{
+    color:#FFFFFF;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.banner-image{
+    position: absolute;
+    width: 556.01px;
+    height: 438px;
+    left: 1299.01px;
+    top: 153px;}
+
+/* ---------------------------
+        players section
+--------------------------- */
+.players{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player{
+    margin: 10px auto;
+    width: 320px;
+    height: 475px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgb(230, 230, 230);
+}
+
+.player img{
+    width: 300px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.player-info{
+    width: 300px;
+    margin: auto;
+    font-size: .9em;
+}
+
+.player-name h2{
+    margin-top: 0px;
+}
+
+
+
+.highlight{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.text{
+    margin-right: 60px;
+}
+
+.text h1{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #0A0826;
+}
+
+.image img{
+    width: 500px;
+}
+
+
+
+
+/* ----------------------------------
+        upcoming match section
+---------------------------------- */
+
+.upcoming-match{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(9, 9, 104);
+    margin-top: 0;
+}
+
+.title-section{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.matches{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.time{
+    font-size: 2em;
+    color: #E9B62A;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.team{
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#match{
+    color: wheat;
+}
+
+
+/* ----------------------------------
+        logo section
+---------------------------------- */
+.logo{
+    margin: 20px auto 10px auto;
+}
+.logo img{
+    width: 480px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----------------------------------
+        footer section
+---------------------------------- */
+
+.socia-icons{
+    text-align: center;
+    font-size: 2em;
+}
+
+.socia-icons a{
+    text-decoration: none;
+    color: rgb(200, 220, 243);
+    display: inline-block;
+    padding: 10px;
+}
+
+/* ----------------------------------
+        copyright section
+---------------------------------- */
+
+.copyright{
+    text-align: center;
+    font-size: 18px;
+}

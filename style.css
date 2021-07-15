@@ -10,82 +10,94 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color:  #FFFFFF;
 }
-
-
-.container{
-    width: 75%;
-    margin: 70px auto;
+h5 {
+    text-align: center;
 }
 
-
-.button a{
+/* buttons style start */
+.watch-Button {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    background: rgb(224, 44, 109);
+    padding: 10px 24px;
     text-decoration: none;
-    font-size: 10pt;
-    font-weight: 700;
-    padding: 15px 25px;
-    border-radius: 5px;
-    background-color: #E02C6D;
     color: white;
-    transition: all .3s ease-in;
-}
-
-.button a:hover{
-    padding: 17px 27px;
-    background-color: rgb(231, 227, 227);
-    color: #E02C6D;
-    font-weight: 700;
-    box-shadow: 1px 1px 10px #E02C6D;
+    transition: .8s ease-in;
 }
 
 
 
+.watch-Button .fas {
+    margin-left: 8px;
+}
+
+.watch-Button:hover .fas {
+    animation: rightIcon .2s ease infinite alternate;
+}
+
+@keyframes rightIcon {
+    0% {
+        color: white;
+    }
+
+    100% {
+        transform: translateX(3px);
+    }
+}
+
+/* button style ends */
 
 
-/* ---------------------------
-        banner section
---------------------------- */
-
-.banner-section{
-    display: flex;
+/*live Section start */
+.live-Section {
+    background-color: #2D25A0;
     width: 100%;
     height: 677px;
-    background-color: #2D25A0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
 }
 
-.container-banner{
-    width: 80%;
-    height: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.copa-Live {
+    margin-left: 156px;
 }
 
-
-.banner-text{
-    width:485px;
-    height: 230px;
-    margin-top: 100px;
-   
-}
-
-.banner-text h1{
-    color:#FFFFFF;
+.live-Title {
+    font-family: 'Poppins', sans-serif;
     font-size: 64px;
-    font-weight: 700;
-    margin-bottom: 0px;
+    font-weight: bold;
+    color: #FFFFFF;
 }
-.banner-image{
-    position: absolute;
-    width: 556.01px;
+
+.copa-Live a:hover {
+    background: rgb(224, 44, 109);
+    background: linear-gradient(25deg, rgba(224, 44, 109, 1) 0%, rgb(255, 42, 106) 39%, rgb(255, 12, 61) 100%);
+    border: 1px solid #ffffff;
+    outline: none;
+}
+
+.copa-Image {
+    width: fit-content;
+    margin: 0;
+}
+
+.copa-Image img {
     height: 438px;
-    left: 1299.01px;
-    top: 153px;}
+    width: 556.0103149414062px;
+}
+
+/* live section ends */
+
 
 /* ---------------------------
         players section
 --------------------------- */
+.players-section{
+    margin-top: 70px;
+}
 .players{
     width: 100%;
     display: grid;
@@ -118,16 +130,22 @@ body{
     margin-top: 0px;
 }
 
-
+/*--highlight section start--*/
 
 .highlight{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    
 }
 
 .text{
     margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 180px;
+    margin-bottom: 217px;
+    
 }
+
 
 .text h1{
     font-size: 46px;
@@ -135,55 +153,14 @@ body{
     line-height: 60px;
     color: #0A0826;
 }
-
+.image{
+    margin-top: 165px;
+    margin-bottom: 158px;
+}
 .image img{
     width: 500px;
 }
-
-
-
-
-/* ----------------------------------
-        upcoming match section
----------------------------------- */
-
-.upcoming-match{
-    width: 100%;
-    height: 300px;
-    background-color: rgb(9, 9, 104);
-    margin-top: 0;
-}
-
-.title-section{
-    color: white;
-    text-align: center;
-    font-size: 2em;
-    font-family: 'Poppins', sans-serif;
-}
-
-.matches{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.time{
-    font-size: 2em;
-    color: #E9B62A;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-}
-
-.team{
-    color: white;
-    font-size: 1.5em;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-}
-
-#match{
-    color: wheat;
-}
-
+/*--highlight section end--*/
 
 /* ----------------------------------
         logo section

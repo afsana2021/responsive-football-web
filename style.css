@@ -10,9 +10,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color:  #FFFFFF;
 }
-h5 {
-    text-align: center;
-}
+
 
 /* buttons style start */
 .watch-Button {
@@ -179,12 +177,12 @@ h5 {
         footer section
 ---------------------------------- */
 
-.socia-icons{
+.social-icons{
     text-align: center;
     font-size: 2em;
 }
 
-.socia-icons a{
+.social-icons a{
     text-decoration: none;
     color: rgb(200, 220, 243);
     display: inline-block;
@@ -198,4 +196,15 @@ h5 {
 .copyright{
     text-align: center;
     font-size: 18px;
+}
+/*---Media Queries---*/
+
+/*---Mobile Devices---*/
+@media only screen and (max-width:688px){
+    
+    .live-Section{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+  
 }
